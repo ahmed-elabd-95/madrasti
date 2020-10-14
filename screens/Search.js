@@ -1,17 +1,11 @@
 import React from 'react';
 import {
-  ImageBackground,
-  Image,
   Text,
-  ScrollView,
   View,
-  TextInput,
-  StyleSheet,
   FlatList,
 } from 'react-native';
 import {Listsub} from '../component/Listsub';
-export class Search extends React.Component {
-  render() {
+  export const Search = (props) => {
     return (
       <View style={{backgroundColor: '#fff', flex: 1}}>
         <Text style={{fontSize: 14, fontWeight: 'bold', marginTop: 10}}>
@@ -28,7 +22,7 @@ export class Search extends React.Component {
             renderItem={({item}) => (
               <Listsub
                 item={item}
-                onPress={() => this.props.navigation.navigate('SubjectName')}
+                onPress={() => props.navigation.navigate('SubjectName')}
               />
             )}
           />
@@ -36,53 +30,53 @@ export class Search extends React.Component {
       </View>
     );
   }
-}
+
 
 const subjectInfo = [
   {
-    image: 'https://tech.innoshop.org/wp-content/uploads/2020/01/unnamed.png',
+    image: 'https://umarksport.com/wp-content/uploads/2020/05/UMARK-SPORTS_eng_2_8-2.png',
     title: 'First lesson Arabic',
     year: 'first year',
     by: 'By MR.AHMED ELABD',
   },
   {
-    image: 'https://tech.innoshop.org/wp-content/uploads/2020/01/unnamed.png',
+    image: 'https://umarksport.com/wp-content/uploads/2020/05/UMARK-SPORTS_eng_2_8-2.png',
     title: 'First lesson Arabic',
     year: 'first year',
     by: 'By MR.AHMED ELABD',
   },
   {
-    image: 'https://tech.innoshop.org/wp-content/uploads/2020/01/unnamed.png',
+    image: 'https://umarksport.com/wp-content/uploads/2020/05/UMARK-SPORTS_eng_2_8-2.png',
     title: 'First lesson Arabic',
     year: 'first year',
     by: 'By MR.AHMED ELABD',
   },
   {
-    image: 'https://tech.innoshop.org/wp-content/uploads/2020/01/unnamed.png',
+    image: 'https://umarksport.com/wp-content/uploads/2020/05/UMARK-SPORTS_eng_2_8-2.png',
     title: 'First lesson Arabic',
     year: 'first year',
     by: 'By MR.AHMED ELABD',
   },
   {
-    image: 'https://tech.innoshop.org/wp-content/uploads/2020/01/unnamed.png',
+    image: 'https://umarksport.com/wp-content/uploads/2020/05/UMARK-SPORTS_eng_2_8-2.png',
     title: 'First lesson Arabic',
     year: 'first year',
     by: 'By MR.AHMED ELABD',
   },
   {
-    image: 'https://tech.innoshop.org/wp-content/uploads/2020/01/unnamed.png',
+    image: 'https://umarksport.com/wp-content/uploads/2020/05/UMARK-SPORTS_eng_2_8-2.png',
     title: 'First lesson Arabic',
     year: 'first year',
     by: 'By MR.AHMED ELABD',
   },
   {
-    image: 'https://tech.innoshop.org/wp-content/uploads/2020/01/unnamed.png',
+    image: 'https://umarksport.com/wp-content/uploads/2020/05/UMARK-SPORTS_eng_2_8-2.png',
     title: 'First lesson Arabic',
     year: 'first year',
     by: 'By MR.AHMED ELABD',
   },
   {
-    image: 'https://tech.innoshop.org/wp-content/uploads/2020/01/unnamed.png',
+    image: 'https://umarksport.com/wp-content/uploads/2020/05/UMARK-SPORTS_eng_2_8-2.png',
     title: 'First lesson Arabic',
     year: 'first year',
     by: 'By MR.AHMED ELABD',

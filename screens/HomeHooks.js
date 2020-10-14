@@ -56,7 +56,7 @@ export const Home = () => {
         </Text>
         <View style={{alignItems: 'center', marginTop: 10}}>
           <Input
-            iconPress={() => this.props.navigation.navigate('Search')}
+            iconPress={() => props.navigation.navigate('Search')}
             isTouchable
             iconstyle={{width: 22.34, height: 22.34}}
             icon={require('../images/search.png')}

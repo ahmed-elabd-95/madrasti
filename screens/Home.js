@@ -12,7 +12,7 @@ import {Input} from '../component/Input';
 import {Subject} from '../component/Subject';
 import {Listsub} from '../component/Listsub';
 
-export const Home = () => {
+export const Home = (props) => {
   const [name, setName] = useState('');
   const [loading, setLoaidng] = useState(false);
 
@@ -56,7 +56,7 @@ export const Home = () => {
         </Text>
         <View style={{alignItems: 'center', marginTop: 10}}>
           <Input
-            iconPress={() => this.props.navigation.navigate('Search')}
+            iconPress={() => props.navigation.navigate('Search')}
             isTouchable
             iconstyle={{width: 22.34, height: 22.34}}
             icon={require('../images/search.png')}
@@ -101,71 +101,71 @@ Home.navigationOptions = {
 const subjectData = [
   {
     image:
-      'https://lightblue.store/wp-content/uploads/2019/10/Light_Blue_logo-03-2.png',
+      'https://falqunon.com/wp-content/uploads/2020/06/FAQ_Header_Logo-12.png',
     title: 'WORDPRESS',
   },
   {
     image:
-      'https://lightblue.store/wp-content/uploads/2019/10/Light_Blue_logo-03-2.png',
+      'https://falqunon.com/wp-content/uploads/2020/06/FAQ_Header_Logo-12.png',
     title: 'WORDPRESS',
   },
   {
     image:
-      'https://lightblue.store/wp-content/uploads/2019/10/Light_Blue_logo-03-2.png',
+      'https://falqunon.com/wp-content/uploads/2020/06/FAQ_Header_Logo-12.png',
     title: 'WORDPRESS',
   },
   {
     image:
-      'https://lightblue.store/wp-content/uploads/2019/10/Light_Blue_logo-03-2.png',
+      'https://falqunon.com/wp-content/uploads/2020/06/FAQ_Header_Logo-12.png',
     title: 'WORDPRESS',
   },
   {
     image:
-      'https://lightblue.store/wp-content/uploads/2019/10/Light_Blue_logo-03-2.png',
+      'https://falqunon.com/wp-content/uploads/2020/06/FAQ_Header_Logo-12.png',
     title: 'WORDPRESS',
   },
   {
     image:
-      'https://lightblue.store/wp-content/uploads/2019/10/Light_Blue_logo-03-2.png',
+      'https://falqunon.com/wp-content/uploads/2020/06/FAQ_Header_Logo-12.png',
     title: 'WORDPRESS',
   },
   {
     image:
-      'https://lightblue.store/wp-content/uploads/2019/10/Light_Blue_logo-03-2.png',
+      'https://falqunon.com/wp-content/uploads/2020/06/FAQ_Header_Logo-12.png',
     title: 'WORDPRESS',
   },
   {
     image:
-      'https://lightblue.store/wp-content/uploads/2019/10/Light_Blue_logo-03-2.png',
+      'https://falqunon.com/wp-content/uploads/2020/06/FAQ_Header_Logo-12.png',
     title: 'WORDPRESS',
   },
   {
     image:
-      'https://lightblue.store/wp-content/uploads/2019/10/Light_Blue_logo-03-2.png',
+      'https://falqunon.com/wp-content/uploads/2020/06/FAQ_Header_Logo-12.png',
     title: 'WORDPRESS',
   },
 ];
 const subjectInfo = [
   {
-    image: 'https://tech.innoshop.org/wp-content/uploads/2020/01/unnamed.png',
+    image: 'https://umarksport.com/wp-content/uploads/2020/05/UMARK-SPORTS_eng_2_8-2.png',
     title: 'First lesson Arabic',
     year: 'first year',
     by: 'By MR.AHMED ELABD',
   },
   {
-    image: 'https://tech.innoshop.org/wp-content/uploads/2020/01/unnamed.png',
+    image: 'https://umarksport.com/wp-content/uploads/2020/05/UMARK-SPORTS_eng_2_8-2.png',
     title: 'First lesson Arabic',
     year: 'first year',
     by: 'By MR.AHMED ELABD',
   },
   {
-    image: 'https://tech.innoshop.org/wp-content/uploads/2020/01/unnamed.png',
+    image: 'https://umarksport.com/wp-content/uploads/2020/05/UMARK-SPORTS_eng_2_8-2.png',
     title: 'First lesson Arabic',
     year: 'first year',
     by: 'By MR.AHMED ELABD',
   },
   {
-    image: 'https://tech.innoshop.org/wp-content/uploads/2020/01/unnamed.png',
+    image: 'https://umarksport.com/wp-content/uploads/2020/05/UMARK-SPORTS_eng_2_8-2.png',
     title: 'First lesson Arabic',
     year: 'first year',
     by: 'By MR.AHMED ELABD',
